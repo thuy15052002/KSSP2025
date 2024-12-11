@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSSP 2025 - Trại Hè Du Học New Zealand</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link đến file JavaScript -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">KSSP 2025</a>
+                <ul class="menu">
+                    <li><a href="#about">Về KSSP</a></li>
+                    <li><a href="#programs">Chương Trình</a></li>
+                    <li><a href="#register">Đăng Ký</a></li>
+                    <li><a href="#stories">Câu Chuyện</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Khám Phá Trại Hè KSSP 2025</h1>
+            <p>Hành trình học tập và trải nghiệm đáng nhớ tại New Zealand!</p>
+            <a href="#register" class="btn">Đăng Ký Ngay</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Về KSSP</h2>
+            <p>KSSP là chương trình du học hè tại New Zealand, mang đến cơ hội trải nghiệm nền giáo dục hiện đại, sống cùng gia đình bản xứ, và khám phá thiên nhiên tuyệt đẹp.</p>
+            <img src="images/about.jpg" alt="Về KSSP">
+        </div>
+    </section>
+
+    <section id="programs">
+        <div class="container">
+            <h2>Chương Trình</h2>
+            <div class="program-list">
+                <div class="program">
+                    <h3>Khóa Học Tiếng Anh</h3>
+                    <p>Luyện tập tiếng Anh qua các hoạt động thực tiễn và giao lưu với học sinh quốc tế.</p>
+                </div>
+                <div class="program">
+                    <h3>Tham Quan & Trải Nghiệm</h3>
+                    <p>Tham quan hang Waitomo, ngắm cá heo, và khám phá văn hóa Maori độc đáo.</p>
+                </div>
+                <div class="program">
+                    <h3>Sống Cùng Homestay</h3>
+                    <p>Trải nghiệm cuộc sống cùng gia đình New Zealand, học cách tự lập và hòa nhập.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="container">
+            <h2>Đăng Ký</h2>
+            <p>Hãy nhanh tay đăng ký để đảm bảo một suất tham gia trại hè KSSP 2025!</p>
+            <a href="registration-form.html" class="btn" onclick="showSuccessMessage()">Đăng Ký Ngay</a>
+        </div>
+    </section>
+
+    <section id="stories">
+        <div class="container">
+            <h2>Câu Chuyện</h2>
+            <div class="stories-list">
+                <div class="story">
+                    <h3>Hành Trình Của Mai</h3>
+                    <p>"KSSP đã thay đổi hoàn toàn cách nhìn của tôi về học tập và cuộc sống."</p>
+                </div>
+                <div class="story">
+                    <h3>Trải Nghiệm Của Nam</h3>
+                    <p>"Tôi rất vui khi được kết bạn với các bạn quốc tế và sống trong một gia đình homestay."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <ul>
+                <li><strong>Ai có thể tham gia KSSP?</strong> Học sinh từ 12 đến 18 tuổi.</li>
+                <li><strong>Chương trình diễn ra khi nào?</strong> Mùa hè 2025.</li>
+                <li><strong>Chi phí tham gia?</strong> Vui lòng xem tại trang Đăng Ký.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Liên Hệ</h2>
+            <p>Đội ngũ chúng tôi luôn sẵn sàng hỗ trợ bạn!</p>
+            <p>Email: support@kiwisummer.com.vn | Hotline: 123-456-789</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 KSSP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="success-message" class="success-message">
+        <p>Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+        <button onclick="closeSuccessMessage()">Đóng</button>
+    </div>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Function to show success message
+        function showSuccessMessage() {
+            document.getElementById('success-message').style.display = 'block';
+        }
+
+        // Function to close success message
+        function closeSuccessMessage() {
+            document.getElementById('success-message').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
